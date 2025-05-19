@@ -104,6 +104,13 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
             ],
           ),
+          IconButton(
+            icon: const Icon(Icons.logout),
+            tooltip: 'Salir',
+            onPressed: () {
+              Navigator.pushReplacementNamed(context, '/login');
+            },
+          ),
         ],
       ),
       body: Column(
